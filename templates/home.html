@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.css/' %}">
+</head>
+<style>
+    .button{
+        border-radius: 50%;
+    }
+</style>
+<body>
+<div class="button">
+    <a href="/employes/"><button type="button" class="btn btn-outline-primary">Таблица Работники</button></a>
+    <a href="/info_list/"><button type="button" class="btn btn-outline-primary">Информационна Таблица</button></a>
+    <a href="/staffing/"><button type="button" class="btn btn-outline-primary">Табель Сотрудника</button></a>
+    <a href="/referense/"><button type="button" class="btn btn-outline-primary">Штатное расписание</button></a>
+</div>
+</body>
+</html>

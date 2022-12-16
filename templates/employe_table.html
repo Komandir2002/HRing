@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+</head>
+<body>
+<div class="container con_r">
+    {% for employe in object_list %}
+        <a href="{{ employe.id }}/"> {{ employe.FIO }}</a>
+    {% endfor %}
+<a href="/add_post/"><button type="button" class="btn btn-outline-primary">Добавить сотрудника</button></a>
+</div>
+</body>
+</html>

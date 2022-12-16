@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+</head>
+<body>
+<div class="container butons">
+    <a href="/home/" type="button" class="btn btn-outline-success">Back</a>
+    <a href="/employes/{{object.id}}/update/" class="btn btn-outline-success show_button">Update</a>
+    <a href="/employes/{{object.id}}/delete/" class="btn btn-outline-success show_button">Delete</a>
+</div>
+<div class="container shows__container">
+    <div class="detail__text">
+        <h2><b>ФИО:</b>{{ object.FIO }}</h2>
+        <p><b>Должность:</b>{{ object.Job_title_id }}</p>
+        <p><b>Отдел:</b>{{ object.department }}</p>
+    </div>
+</div>
+
+</body>
+</html>

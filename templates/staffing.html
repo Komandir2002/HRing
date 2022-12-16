@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staffing</title>
+</head>
+<body>
+<style>
+    .table-bordered{
+        <table>
+    }
+</style>
+<div>
+<table>
+  <tr>
+    <th>Работник&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Информация &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Отработал &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></th>
+    <th>Зарплата</th>
+  </tr>
+  {% for employe in object_list %}
+  <tr>
+    <td>{{ employe.id_employee }}&nbsp;&nbsp;&nbsp; &nbsp;</td>
+    <td>{{ employe.id_info_list }}</td>
+    <td>{{ employe.hours }}ч (мес)&nbsp;&nbsp;&nbsp; &nbsp;</td>
+    <td>{{ employe.zp }}$</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+
+<a href="/add_staffing/"><button type="button" class="btn btn-outline-primary">Добавить сотрудника</button></a>
+</body>
+</html>

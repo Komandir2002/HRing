@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reference_detail</title>
+</head>
+<body>
+<div class="container butons">
+    <a href="/home/" type="button" class="btn btn-outline-success">Back</a>
+    <a href="/referense/{{object.id}}/update/" class="btn btn-outline-success show_button">Update</a>
+    <a href="/referense/{{object.id}}/delete/" class="btn btn-outline-success show_button">Delete</a>
+</div>
+<div class="container shows__container">
+    <div class="detail__text">
+        <h2><b>ФИО:</b>{{ object.FIO }}</h2>
+        <p><b>Отдел:</b>{{ object.Department }}</p>
+        <p><b>Оклад:</b>{{ object.Salary }}</p>
+    </div>
+</div>
+</body>
+</html>

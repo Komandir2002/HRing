@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Info_list</title>
+</head>
+<body>
+<div class="container con_r">
+     <div class="row gy-5">
+        {% for info in object_list%}
+            <p>ФИО:{{ info.Employe }}</p>
+            <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Больничный
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Командировка
+  </label>
+</div>
+            <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Работает
+  </label>
+</div>
+        {% endfor %}
+    </div>
+</div>
+<a href="/add_info/"><button type="button" class="btn btn-outline-primary">Добавить сотрудника</button></a>
+</body>
+</html>
